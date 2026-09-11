@@ -1,0 +1,21 @@
+index.html
+  s_89820f78b83057::t_27b901bb131d5b 3,6
+style.css
+  s_89820f78b83057::t_bb271387688955 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "1726e5db656343066b6c8657e0ad022c7eea70f6",
+  "prompts": {},
+  "sessions": {
+    "s_89820f78b83057": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a08f33-e2e6-7431-ad69-759d0a08c329",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "wangningtao <wangningtao@rongcloud.cn>"
+    }
+  }
+}

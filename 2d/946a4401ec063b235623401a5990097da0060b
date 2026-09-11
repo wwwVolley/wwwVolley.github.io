@@ -1,0 +1,23 @@
+assets/editor-jumper.svg
+  s_89820f78b83057::t_ddef10d810cdfb 1-6
+index.html
+  s_89820f78b83057::t_a2dfd751b10b63 1-8
+style.css
+  s_89820f78b83057::t_00bb09136cfa36 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "2d946a4401ec063b235623401a5990097da0060b",
+  "prompts": {},
+  "sessions": {
+    "s_89820f78b83057": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a08f33-e2e6-7431-ad69-759d0a08c329",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "wangningtao <wangningtao@rongcloud.cn>"
+    }
+  }
+}

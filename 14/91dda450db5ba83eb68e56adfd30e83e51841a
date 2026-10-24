@@ -1,0 +1,37 @@
+style.css
+  s_31ffbce6ae9f06::t_3071d3547e6f01 7
+limecode.html
+  s_31ffbce6ae9f06::t_ec93aeed9f7e72 15
+  s_31ffbce6ae9f06::t_8da325b821da20 14,20-24,39-41,43
+privacy.html
+  s_31ffbce6ae9f06::t_ed41c0a4c070eb 4
+support.html
+  s_31ffbce6ae9f06::t_47e1126e9ca129 4
+index.html
+  s_31ffbce6ae9f06::t_0bf61e19007574 1,3-9
+  s_31ffbce6ae9f06::t_ec93aeed9f7e72 2
+i18n.js
+  s_31ffbce6ae9f06::t_3071d3547e6f01 1-34,39-64
+  s_31ffbce6ae9f06::t_c1f8badb4180c8 35-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1491dda450db5ba83eb68e56adfd30e83e51841a",
+  "prompts": {},
+  "humans": {
+    "h_6666637fbc071c": {
+      "author": "wangningtao <wangningtao@rongcloud.cn>"
+    }
+  },
+  "sessions": {
+    "s_31ffbce6ae9f06": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a09009-667e-7ea2-a642-8e04d2228ba2",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "wangningtao <wangningtao@rongcloud.cn>"
+    }
+  }
+}

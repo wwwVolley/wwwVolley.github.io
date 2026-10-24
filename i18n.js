@@ -1,0 +1,64 @@
+(() => {
+  const translations = {
+    en: {
+      'nav.products': 'Products', 'nav.limecode': 'LimeCode', 'nav.principles': 'Principles', 'nav.downloads': 'Downloads', 'nav.features': 'Features', 'nav.support': 'Support', 'nav.privacy': 'Privacy',
+      'footer.top': 'Back to top ↑', 'footer.back': 'Back to LimeCode ↑',
+      'home.hero.eyebrow': 'Tools should make focus easier', 'home.hero.title': 'Make every<br><em>switch and note</em><br>matter.', 'home.hero.intro': 'wwwVolley creates digital products for real workflows: less friction, more control, and more time for the work itself.', 'home.hero.button': 'Explore products <span>↓</span>', 'home.hero.note': 'Designed for focus', 'home.jumper': 'Jump where your work lives.', 'home.chronowork.title': 'ChronoWork', 'home.chronowork.tagline': 'Every hour is worth seeing.', 'home.ticker': 'Focus · Precision · Momentum',
+      'home.products.eyebrow': 'SELECTED WORKS', 'home.products.title': 'Two kinds of tools,<br><em>one work philosophy.</em>', 'home.products.intro': 'From code editing to daily time tracking, good tools should stay out of the way and make the next step feel natural.', 'home.editor.description': 'In JetBrains IDEs, send the current file to any editor you use. One right-click takes you to Cursor, VS Code, TRAE, Codex, or your own tool.', 'home.editor.link': 'View on JetBrains Marketplace <b>↗</b>', 'home.chronowork.name': 'Chrono<br>Work<span>™</span>', 'home.chronowork.description': 'A personal work-hours tracker for HarmonyOS. Calibrate schedules automatically and see weekly, monthly, and yearly hours and income clearly.', 'home.chronowork.link': 'Get it on AppGallery <b>↗</b>', 'home.limecode.description': 'A native macOS text and code editor for focused work, with tabs, Finder associations, syntax highlighting, separate windows, and local draft recovery.', 'home.limecode.link': 'View LimeCode <b>↗</b>',
+      'home.principles.eyebrow': 'THE PRINCIPLE', 'home.principles.title': 'Less distraction,<br><em>more progress.</em>', 'home.principles.one.title': 'Intentional design', 'home.principles.one.body': 'Every entry point is considered, leaving only what helps you finish the work.', 'home.principles.two.title': 'Respect your rhythm', 'home.principles.two.body': 'Tools should adapt to your workflow, not ask you to change your habits.', 'home.principles.three.title': 'Built for the long run', 'home.principles.three.body': "Small and dependable, continuously refined so today's version holds up tomorrow.", 'home.closing.eyebrow': 'KEEP IN TOUCH', 'home.closing.title': 'The next product<br><em>is on its way.</em>', 'home.closing.button': 'Follow on GitHub <span>↗</span>',
+      'lime.hero.eyebrow': 'NATIVE MACOS EDITOR · VERSION 1.0', 'lime.hero.title': 'Write with<br><em>less noise.</em>', 'lime.hero.lede': 'LimeCode is a focused text and code editor for macOS. Open a file, find what matters, make the change, and keep moving.', 'lime.hero.button': 'Get LimeCode <span>↓</span>', 'lime.hero.source': 'View source ↗', 'lime.hero.note': 'macOS 12 or later · Apple silicon and Intel · English / 简体中文', 'lime.workflow.eyebrow': 'THE WORKFLOW', 'lime.workflow.title': 'Small surface.<br><em>Serious work.</em>', 'lime.workflow.intro': 'Everything you need for everyday text editing, with enough depth for a real codebase.', 'lime.feature.open.title': 'Open anywhere', 'lime.feature.open.body': 'Finder associations and standard Open panels make a document one click away.', 'lime.feature.context.title': 'Stay in context', 'lime.feature.context.body': 'Tabs, search, syntax highlighting, undo history, and separate windows work together.', 'lime.feature.control.title': 'Keep control', 'lime.feature.control.body': 'Local draft recovery, external-change protection, and no account or document upload.', 'lime.download.eyebrow': 'DOWNLOADS · VERSION 1.0.0', 'lime.download.title': 'Choose your<br><em>working setup.</em>', 'lime.download.intro': 'Signed and notarized for macOS 12 or later. Universal2 builds support both Apple silicon and Intel Macs. Verify downloads with the published SHA-256 checksums.', 'lime.download.app': 'App-only DMG · Universal2', 'lime.download.full': 'App + CLI + MCP · Universal2', 'lime.download.cli': 'Standalone command-line tools · PKG', 'lime.download.mcp': 'Standalone MCP server · PKG', 'lime.download.action': 'Download ↓', 'lime.download.checksums': 'SHA-256 checksums', 'lime.trust.eyebrow': 'BUILT BY WWWVOLLEY', 'lime.trust.body': 'No account. No telemetry service. Your documents stay on your Mac.', 'lime.trust.link': 'Read the privacy notes <b>↗</b>',
+      'privacy.eyebrow': 'LIMECODE PRIVACY', 'privacy.title': 'Your files<br><em>stay yours.</em>', 'privacy.updated': 'Last updated: October 24, 2026', 'privacy.p1': 'LimeCode is provided by <strong>wangningtao</strong> as a local macOS editor. The app does not require an account and does not upload the contents of documents to a LimeCode server.', 'privacy.p2': 'Files are accessed when you select them through macOS Open or Save panels. Unsaved recovery drafts and language preferences are stored locally on your Mac. Optional donations are processed by Apple through StoreKit; LimeCode does not receive your payment details.', 'privacy.p3': "The website edition's CLI and MCP tools communicate with a locally running LimeCode instance. They are distributed separately and are not included in the App Store edition.", 'privacy.p4': 'For privacy questions, contact <a href="mailto:wnt18749675933@126.com">wnt18749675933@126.com</a>. For product support, contact <a href="mailto:wangningtao06@gmail.com">wangningtao06@gmail.com</a>.',
+      'support.eyebrow': 'SUPPORT', 'support.title': 'Help when<br><em>you need it.</em>', 'support.audience': 'For LimeCode users', 'support.questions': 'Common questions', 'support.p1': "<strong>Files do not open?</strong><br>Use File &gt; Open or Finder's Open With menu. The App Store edition can access files selected through macOS panels.", 'support.p2': '<strong>Automation is unavailable?</strong><br>CLI and MCP are part of the website edition and are not included in the App Store edition.', 'support.p3': '<strong>Need to report a problem?</strong><br>Please include your macOS version, LimeCode version, reproduction steps, and a sanitized log. Do not include document contents, passwords, or private keys.', 'support.email': 'Email LimeCode support <b>↗</b>', 'support.issue': 'Open a support issue on GitHub <b>↗</b>', 'support.contact': 'Support email: <a href="mailto:wangningtao06@gmail.com">wangningtao06@gmail.com</a>'
+    },
+    zh: {
+      'nav.products': '产品', 'nav.limecode': 'LimeCode', 'nav.principles': '理念', 'nav.downloads': '下载', 'nav.features': '功能', 'nav.support': '支持', 'nav.privacy': '隐私',
+      'footer.top': '回到顶部 ↑', 'footer.back': '返回 LimeCode ↑',
+      'home.hero.eyebrow': '工具，应该让专注更容易', 'home.hero.title': '让每一次<br><em>切换与记录</em><br>都更有意义。', 'home.hero.intro': 'wwwVolley 制作面向真实工作流的数字产品：减少摩擦，保留掌控感，把时间还给创造本身。', 'home.hero.button': '探索产品 <span>↓</span>', 'home.hero.note': '专注于产品体验', 'home.jumper': '在工作所在之处快速打开。', 'home.chronowork.title': '时记工坊', 'home.chronowork.tagline': '每一小时，都值得被看见。', 'home.ticker': '专注 · 精准 · 从容',
+      'home.products.eyebrow': '精选作品', 'home.products.title': '两种工具，<br><em>一套工作哲学。</em>', 'home.products.intro': '从代码编辑器到每日工时，我们相信好的工具不会喧宾夺主，只会让下一步变得自然。', 'home.editor.description': '在 JetBrains IDE 里，把当前文件精准交给你正在使用的编辑器。一次右键，即可打开 Cursor、VS Code、TRAE、Codex 或自定义工具。', 'home.editor.link': '在 JetBrains Marketplace 查看 <b>↗</b>', 'home.chronowork.name': '时记<br>工坊<span>™</span>', 'home.chronowork.description': '为鸿蒙打造的个人工时记录工具。智能校准上下班时间，清晰统计每周、每月与每年的工作时长和收入。', 'home.chronowork.link': '前往鸿蒙应用市场下载 <b>↗</b>', 'home.limecode.description': '面向专注工作的原生 macOS 文本与代码编辑器，支持多标签、Finder 打开方式、语法高亮、独立窗口和本地草稿恢复。', 'home.limecode.link': '查看 LimeCode <b>↗</b>',
+      'home.principles.eyebrow': '我们的理念', 'home.principles.title': '少一点打扰，<br><em>多一点进展。</em>', 'home.principles.one.title': '有意图的设计', 'home.principles.one.body': '每个入口都经过取舍，只留下真正帮助你完成工作的部分。', 'home.principles.two.title': '尊重你的节奏', 'home.principles.two.body': '工具适应工作流，而不是要求你改变习惯去适应工具。', 'home.principles.three.title': '长期打磨', 'home.principles.three.body': '小而可靠，持续改进，让今天的版本经得起明天的使用。', 'home.closing.eyebrow': '保持联系', 'home.closing.title': '下一件作品，<br><em>正在路上。</em>', 'home.closing.button': '关注 GitHub <span>↗</span>',
+      'lime.hero.eyebrow': '原生 macOS 编辑器 · 版本 1.0', 'lime.hero.title': '写作与编码，<br><em>少一些干扰。</em>', 'lime.hero.lede': 'LimeCode 是一款专注于文本与代码编辑的 macOS 应用。打开文件，找到重点，完成修改，然后继续前进。', 'lime.hero.button': '获取 LimeCode <span>↓</span>', 'lime.hero.source': '查看源代码 ↗', 'lime.hero.note': 'macOS 12 或更新版本 · Apple 芯片与 Intel · 英文 / 简体中文', 'lime.workflow.eyebrow': '工作方式', 'lime.workflow.title': '界面简洁，<br><em>工作扎实。</em>', 'lime.workflow.intro': '日常文本编辑所需的一切，也为真实代码项目提供足够能力。', 'lime.feature.open.title': '随处打开', 'lime.feature.open.body': '支持 Finder 文件关联和标准打开面板，让打开文档只需一步。', 'lime.feature.context.title': '保持上下文', 'lime.feature.context.body': '标签页、搜索、语法高亮、撤销历史和独立窗口协同工作。', 'lime.feature.control.title': '掌控文件', 'lime.feature.control.body': '本地草稿恢复、外部修改保护，不需要账户，也不会上传文档。', 'lime.download.eyebrow': '下载 · 版本 1.0.0', 'lime.download.title': '选择适合你的<br><em>工作组合。</em>', 'lime.download.intro': '已签名并完成公证，支持 macOS 12 或更新版本。Universal2 同时支持 Apple 芯片和 Intel Mac。可使用公开的 SHA-256 校验值验证下载文件。', 'lime.download.app': '仅应用 DMG · Universal2', 'lime.download.full': '应用 + CLI + MCP · Universal2', 'lime.download.cli': '独立命令行工具 · PKG', 'lime.download.mcp': '独立 MCP 服务 · PKG', 'lime.download.action': '下载 ↓', 'lime.download.checksums': 'SHA-256 校验值', 'lime.trust.eyebrow': '由 WWWVOLLEY 开发', 'lime.trust.body': '无需账户，不使用遥测服务。你的文档始终留在自己的 Mac 上。', 'lime.trust.link': '阅读隐私说明 <b>↗</b>',
+      'privacy.eyebrow': 'LIMECODE 隐私说明', 'privacy.title': '你的文件，<br><em>始终由你掌控。</em>', 'privacy.updated': '最后更新：2026 年 10 月 24 日', 'privacy.p1': 'LimeCode 由 <strong>wangningtao</strong> 提供，是一款本地运行的 macOS 编辑器。应用无需账户，也不会将文档内容上传到 LimeCode 服务器。', 'privacy.p2': '只有在你通过 macOS 打开或存储面板选择文件时，应用才会访问这些文件。未保存内容的恢复草稿和语言偏好保存在你的 Mac 本地。可选打赏由 Apple 通过 StoreKit 处理，LimeCode 不会收到你的付款信息。', 'privacy.p3': '官网版 CLI 和 MCP 工具与本机运行的 LimeCode 通信，并单独分发；App Store 版本不包含这些工具。', 'privacy.p4': '隐私问题请联系 <a href="mailto:wnt18749675933@126.com">wnt18749675933@126.com</a>。产品支持请联系 <a href="mailto:wangningtao06@gmail.com">wangningtao06@gmail.com</a>。',
+      'support.eyebrow': '产品支持', 'support.title': '需要帮助时，<br><em>我们在这里。</em>', 'support.audience': '面向 LimeCode 用户', 'support.questions': '常见问题', 'support.p1': '<strong>文件无法打开？</strong><br>使用“文件 > 打开”，或在 Finder 的“打开方式”中选择 LimeCode。App Store 版本可以访问通过 macOS 面板选择的文件。', 'support.p2': '<strong>自动化功能不可用？</strong><br>CLI 和 MCP 属于官网版本，不包含在 App Store 版本中。', 'support.p3': '<strong>需要反馈问题？</strong><br>请提供 macOS 版本、LimeCode 版本、复现步骤和已清理敏感信息的日志。请勿附上文档内容、密码或私钥。', 'support.email': '发送邮件联系 LimeCode 支持 <b>↗</b>', 'support.issue': '在 GitHub 提交支持问题 <b>↗</b>', 'support.contact': '支持邮箱：<a href="mailto:wangningtao06@gmail.com">wangningtao06@gmail.com</a>'
+    }
+  };
+
+  const button = document.querySelector('.language-toggle');
+  const getSavedLanguage = () => {
+    try { return localStorage.getItem('wwwvolley-language') === 'zh' ? 'zh' : 'en'; }
+    catch (_) { return 'en'; }
+  };
+  const applyLanguage = (language) => {
+    const dictionary = translations[language];
+    document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+    document.querySelectorAll('[data-i18n]').forEach((element) => {
+      const value = dictionary[element.dataset.i18n];
+      if (value !== undefined) {
+        if (value.includes('<')) element.innerHTML = value;
+        else element.textContent = value;
+      }
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach((element) => {
+      const value = dictionary[element.dataset.i18nHtml];
+      if (value !== undefined) element.innerHTML = value;
+    });
+    if (button) {
+      button.textContent = language === 'zh' ? 'English' : '中文';
+      button.setAttribute('aria-label', language === 'zh' ? '切换为英文' : 'Switch to Chinese');
+      button.setAttribute('aria-pressed', language === 'zh' ? 'true' : 'false');
+    }
+    const titles = {
+      index: language === 'zh' ? 'wwwVolley — 有意图的工具' : 'wwwVolley — Tools with intent',
+      limecode: language === 'zh' ? 'LimeCode — 专注的 macOS 文本编辑器' : 'LimeCode — Focused text editing for macOS',
+      privacy: language === 'zh' ? 'LimeCode — 隐私说明' : 'LimeCode — Privacy',
+      support: language === 'zh' ? 'LimeCode — 产品支持' : 'LimeCode — Support'
+    };
+    const page = location.pathname.split('/').pop().replace('.html', '') || 'index';
+    if (titles[page]) document.title = titles[page];
+  };
+  applyLanguage(getSavedLanguage());
+  if (button) button.addEventListener('click', () => {
+    const language = document.documentElement.lang === 'zh-CN' ? 'en' : 'zh';
+    try { localStorage.setItem('wwwvolley-language', language); } catch (_) {}
+    applyLanguage(language);
+  });
+})();

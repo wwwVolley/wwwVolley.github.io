@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Install and use LimeCode, CLI, and MCP on macOS.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>LimeCode — Install &amp; Use</title>
+</head>
+<body class="limecode-page install-page">
+  <header class="top">
+    <a class="brand" href="index.html"><span class="mark">W</span><span>wwwVolley</span></a>
+    <nav><a href="limecode.html" data-i18n="nav.limecode">LimeCode</a><a href="#packages" data-i18n="nav.downloads">Downloads</a><a href="support.html" data-i18n="nav.support">Support</a><a href="https://github.com/wwwVolley" target="_blank" rel="noopener">GitHub ↗</a></nav>
+    <span class="edition">INSTALL · VERSION 1.0.0</span><button class="language-toggle" type="button" aria-label="Switch language">中文</button>
+  </header>
+  <main>
+    <section class="install-hero"><p class="eyebrow" data-i18n="install.hero.eyebrow">LIMECODE · INSTALLATION</p><h1 data-i18n-html="install.hero.title">Set up your<br><em>working setup.</em></h1><p data-i18n="install.hero.lede">Choose the package that matches how you work. Every website build is Universal2 for macOS 12 or later, so it runs on Apple silicon and Intel Macs.</p><div class="install-meta"><span data-i18n="install.hero.version">Version 1.0.0</span><span data-i18n="install.hero.requirement">macOS 12+ · Apple silicon / Intel</span></div></section>
+    <section id="packages" class="install-section"><div class="install-heading"><p class="eyebrow" data-i18n="install.packages.eyebrow">PACKAGES</p><h2 data-i18n-html="install.packages.title">Four ways to<br><em>get started.</em></h2></div>
+      <div class="install-grid">
+        <article class="install-card"><div class="install-card-top"><span class="install-number">01</span><span class="install-tag">DMG</span></div><h3 data-i18n="install.app.title">LimeCode App</h3><p data-i18n="install.app.body">The editor only. Choose this when you already have CLI and MCP, or only need the native app.</p><a class="install-download" href="downloads/LimeCode-1.0.0-macOS-universal2-app.dmg" data-i18n="install.download.app">Download App DMG ↓</a><ol class="install-steps"><li data-i18n="install.app.step1">Open the DMG.</li><li data-i18n="install.app.step2">Drag LimeCode into Applications.</li><li data-i18n="install.app.step3">Open LimeCode from Launchpad or Finder.</li></ol></article>
+        <article class="install-card install-card-featured"><div class="install-card-top"><span class="install-number">02</span><span class="install-tag">DMG</span></div><h3 data-i18n="install.full.title">LimeCode Complete</h3><p data-i18n="install.full.body">The recommended website bundle: LimeCode plus the CLI and MCP helpers for automation.</p><a class="install-download" href="downloads/LimeCode-1.0.0-macOS-universal2-full.dmg" data-i18n="install.download.full">Download Complete DMG ↓</a><ol class="install-steps"><li data-i18n="install.full.step1">Open the DMG.</li><li data-i18n="install.full.step2">Drag LimeCode into Applications.</li><li data-i18n="install.full.step3">Use the included helpers or install them with the commands below.</li></ol></article>
+        <article class="install-card"><div class="install-card-top"><span class="install-number">03</span><span class="install-tag">PKG</span></div><h3 data-i18n="install.cli.title">CLI package</h3><p data-i18n="install.cli.body">Installs <code>limecode</code> in <code>/usr/local/bin</code> so scripts and agents can control a running website edition.</p><a class="install-download" href="downloads/LimeCode-1.0.0-macOS-universal2-cli.pkg" data-i18n="install.download.cli">Download CLI PKG ↓</a><ol class="install-steps"><li data-i18n="install.pkg.step1">Open the PKG and follow the installer.</li><li data-i18n="install.pkg.step2">Enter your macOS password when asked.</li><li data-i18n="install.pkg.step3">Start the website edition of LimeCode before editing commands.</li></ol></article>
+        <article class="install-card"><div class="install-card-top"><span class="install-number">04</span><span class="install-tag">PKG</span></div><h3 data-i18n="install.mcp.title">MCP package</h3><p data-i18n="install.mcp.body">Installs the MCP stdio server in <code>/usr/local/libexec</code> for Claude Desktop and IDE agents.</p><a class="install-download" href="downloads/LimeCode-1.0.0-macOS-universal2-mcp.pkg" data-i18n="install.download.mcp">Download MCP PKG ↓</a><ol class="install-steps"><li data-i18n="install.pkg.step1">Open the PKG and follow the installer.</li><li data-i18n="install.pkg.step2">Enter your macOS password when asked.</li><li data-i18n="install.pkg.step3">Configure the MCP command in your agent.</li></ol></article>
+      </div>
+      <p class="install-note" data-i18n-html="install.packages.note">App Store customers should use the App Store build for the editor. CLI and MCP are website-edition tools; the App Store build intentionally does not include automation. <a href="downloads/SHA256SUMS">Verify SHA-256 checksums ↗</a></p>
+    </section>
+    <section class="install-section install-dark"><div class="install-heading"><p class="eyebrow" data-i18n="install.cli.eyebrow">COMMAND LINE</p><h2 data-i18n-html="install.cli.heading">Use LimeCode<br><em>from a terminal.</em></h2></div><div class="install-content"><p data-i18n="install.cli.intro">The CLI talks to the currently running website edition over a local Unix socket. Metadata commands work offline; document commands require LimeCode to be open.</p><pre class="install-code"><code># Check the installation
+limecode --json schema
+limecode --json capabilities
+
+# Inspect the running editor
+limecode --json status
+limecode --json windows
+limecode --json tabs
+
+# Open a file
+limecode open ~/Documents/notes.toml
+
+# Read or edit the active document
+limecode get-text --document 1
+limecode insert "Hello, LimeCode!" --document 1 --offset 0
+limecode save 1</code></pre><p class="install-note" data-i18n-html="install.cli.note">Use <code>--json</code> for one response per command, or pipe newline-delimited requests with <code>--jsonl</code> for scripts and agents.</p></div></section>
+    <section class="install-section"><div class="install-heading"><p class="eyebrow" data-i18n="install.mcp.eyebrow">MCP / IDE AGENTS</p><h2 data-i18n-html="install.mcp.heading">Connect an agent<br><em>in one config.</em></h2></div><div class="install-content"><p data-i18n="install.mcp.intro">After installing the MCP package, add this server entry to Claude Desktop or your MCP-compatible IDE. Restart the client after saving the configuration.</p><pre class="install-code"><code>{
+  "mcpServers": {
+    "limecode": {
+      "command": "/usr/local/libexec/limecode-mcp-server"
+    }
+  }
+}</code></pre><p data-i18n-html="install.mcp.after">Keep the website edition of LimeCode running while the agent works. The server forwards the same commands as the CLI and preserves unsaved text, undo history, selection, and revision checks.</p></div></section>
+    <section class="install-section install-faq"><div class="install-heading"><p class="eyebrow" data-i18n="install.faq.eyebrow">QUICK ANSWERS</p><h2 data-i18n-html="install.faq.title">Before you<br><em>start working.</em></h2></div><div class="faq-list"><details open><summary data-i18n="install.faq.q1">Which package should I download?</summary><p data-i18n="install.faq.a1">Choose Complete for a new setup. Choose App when you only need the editor. Add CLI and MCP separately when you want automation.</p></details><details><summary data-i18n="install.faq.q2">Why does CLI say automation is unavailable?</summary><p data-i18n="install.faq.a2">The App Store build is isolated from automation. Install and launch the website edition, then run the CLI or MCP command again.</p></details><details><summary data-i18n="install.faq.q3">How do I verify a download?</summary><p data-i18n-html="install.faq.a3">Download <a href="downloads/SHA256SUMS">SHA256SUMS</a> and run <code>shasum -a 256 -c SHA256SUMS</code> in the folder containing the packages.</p></details></div></section>
+  </main>
+  <footer><span>© 2026 wwwVolley</span><span>LIMECODE · INSTALL &amp; USE</span><a href="limecode.html" data-i18n="footer.back">Back to LimeCode ↑</a></footer><script src="i18n.js"></script>
+</body>
+</html>

@@ -11,7 +11,7 @@
 <body class="limecode-page install-page">
   <header class="top">
     <a class="brand" href="index.html"><span class="mark">W</span><span>wwwVolley</span></a>
-    <nav><a href="limecode.html" data-i18n="nav.limecode">LimeCode</a><a href="#packages" data-i18n="nav.downloads">Downloads</a><a href="support.html" data-i18n="nav.support">Support</a><a href="https://github.com/wwwVolley" target="_blank" rel="noopener">GitHub ↗</a></nav>
+    <nav><a href="limecode.html" data-i18n="nav.limecode">LimeCode</a><a href="#packages" data-i18n="nav.downloads">Downloads</a><a href="support.html" data-i18n="nav.support">Support</a><a href="privacy.html" data-i18n="nav.privacy">Privacy</a><a href="https://github.com/wwwVolley" target="_blank" rel="noopener">GitHub ↗</a></nav>
     <span class="edition">INSTALL · VERSION 1.0.0</span><button class="language-toggle" type="button" aria-label="Switch language">中文</button>
   </header>
   <main>
@@ -36,10 +36,14 @@ limecode --json tabs
 
 # Open a file
 limecode open ~/Documents/notes.toml
+limecode new
 
 # Read or edit the active document
 limecode get-text --document 1
 limecode insert "Hello, LimeCode!" --document 1 --offset 0
+limecode find "TODO" --document 1
+limecode replace-all "draft" "published" --document 1
+limecode undo --document 1
 limecode save 1</code></pre><p class="install-note" data-i18n-html="install.cli.note">Use <code>--json</code> for one response per command, or pipe newline-delimited requests with <code>--jsonl</code> for scripts and agents.</p></div></section>
     <section class="install-section"><div class="install-heading"><p class="eyebrow" data-i18n="install.mcp.eyebrow">MCP / IDE AGENTS</p><h2 data-i18n-html="install.mcp.heading">Connect an agent<br><em>in one config.</em></h2></div><div class="install-content"><p data-i18n="install.mcp.intro">After installing the MCP package, add this server entry to Claude Desktop or your MCP-compatible IDE. Restart the client after saving the configuration.</p><pre class="install-code"><code>{
   "mcpServers": {
@@ -50,6 +54,6 @@ limecode save 1</code></pre><p class="install-note" data-i18n-html="install.cli.
 }</code></pre><p data-i18n-html="install.mcp.after">Keep the website edition of LimeCode running while the agent works. The server forwards the same commands as the CLI and preserves unsaved text, undo history, selection, and revision checks.</p></div></section>
     <section class="install-section install-faq"><div class="install-heading"><p class="eyebrow" data-i18n="install.faq.eyebrow">QUICK ANSWERS</p><h2 data-i18n-html="install.faq.title">Before you<br><em>start working.</em></h2></div><div class="faq-list"><details open><summary data-i18n="install.faq.q1">Which package should I download?</summary><p data-i18n="install.faq.a1">Choose Complete for a new setup. Choose App when you only need the editor. Add CLI and MCP separately when you want automation.</p></details><details><summary data-i18n="install.faq.q2">Why does CLI say automation is unavailable?</summary><p data-i18n="install.faq.a2">The App Store build is isolated from automation. Install and launch the website edition, then run the CLI or MCP command again.</p></details><details><summary data-i18n="install.faq.q3">How do I verify a download?</summary><p data-i18n-html="install.faq.a3">Download <a href="downloads/SHA256SUMS">SHA256SUMS</a> and run <code>shasum -a 256 -c SHA256SUMS</code> in the folder containing the packages.</p></details></div></section>
   </main>
-  <footer><span>© 2026 wwwVolley</span><span>LIMECODE · INSTALL &amp; USE</span><a href="limecode.html" data-i18n="footer.back">Back to LimeCode ↑</a></footer><script src="i18n.js"></script>
+  <footer><span>© 2026 wwwVolley</span><span>LIMECODE · INSTALL &amp; USE</span><span><a href="privacy.html" data-i18n="nav.privacy">Privacy</a> · <a href="support.html" data-i18n="nav.support">Support</a></span><a href="limecode.html" data-i18n="footer.back">Back to LimeCode ↑</a></footer><script src="i18n.js"></script>
 </body>
 </html>

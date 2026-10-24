@@ -1,0 +1,23 @@
+limecode.html
+  s_31ffbce6ae9f06::t_76f2e91f8d8ebf 40
+downloads/README.md
+  s_31ffbce6ae9f06::t_76f2e91f8d8ebf 1,3,12-18
+downloads/SHA256SUMS
+  s_31ffbce6ae9f06::t_1e5c12afa898da 1-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0d14f6729efca55d673f641e1ba091704124fd2a",
+  "prompts": {},
+  "sessions": {
+    "s_31ffbce6ae9f06": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a09009-667e-7ea2-a642-8e04d2228ba2",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "wangningtao <wangningtao@rongcloud.cn>"
+    }
+  }
+}

@@ -24,6 +24,12 @@
 
   translations.en['nav.install'] = 'Install & Use';
   translations.zh['nav.install'] = '安装与使用';
+  translations.en['home.limecode.description'] = 'A native macOS text and code editor for focused work, with tabs, Finder associations, syntax highlighting for Rust, JavaScript, and Python, separate windows, and local draft recovery.';
+  translations.zh['home.limecode.description'] = '面向专注工作的原生 macOS 文本与代码编辑器，支持多标签、Finder 打开方式、Rust/JavaScript/Python 语法高亮、独立窗口和本地草稿恢复。';
+  translations.en['lime.feature.languages'] = 'Syntax highlighting: Rust, JavaScript, and Python.';
+  translations.zh['lime.feature.languages'] = '语法高亮：Rust、JavaScript 和 Python。';
+  translations.en['lime.download.intro'] = 'For macOS 12 or later. Universal2 builds support both Apple silicon and Intel Macs. Verify downloads with the published SHA-256 checksums.';
+  translations.zh['lime.download.intro'] = '支持 macOS 12 或更新版本。Universal2 同时支持 Apple 芯片和 Intel Mac。可使用公开的 SHA-256 校验值验证下载文件。';
   translations.en['lime.download.intro'] = 'For macOS 12 or later. Universal2 builds support both Apple silicon and Intel Macs. Verify downloads with the published SHA-256 checksums.';
   translations.zh['lime.download.intro'] = '支持 macOS 12 或更新版本。Universal2 同时支持 Apple 芯片和 Intel Mac。可使用公开的 SHA-256 校验值验证下载文件。';
   Object.assign(translations.en, {
